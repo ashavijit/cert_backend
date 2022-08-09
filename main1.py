@@ -33,4 +33,4 @@ class Name(BaseModel):
 @app.post("/add/")
 async def add_name(inp: Name):
     response = await generate_certificate(inp.index, inp.org, inp.logo, inp.name)
-    return 
+    return response
